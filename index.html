@@ -27,33 +27,43 @@
     />
     <!-- IMPORT CSS: -->
     <link rel="stylesheet" href="./css/style.css" />
+    <!-- IMPORT JAVASCRIPT: -->
+    <script src="./js/main.js" defer></script>
     <title>SnapBack</title>
   </head>
   <body>
-    <!-- NAVIGATION BAR: -->
-    <nav class="nav-bar">
-      <a href="#">Accueil</a>
-      <a href="#">Wiki</a>
-      <a href="#">Reglement</a>
-      <a href="#">Discord</a>
-      <!-- <a href="#">Boutique</a> -->
-    </nav>
+    <div class="wrapper">
+      <!-- NAVIGATION BAR: -->
+      <nav class="navbar">
+        <div class="burger-menu" onclick="toggleMenu()">
+          <div class="bar"></div>
+          <div class="bar"></div>
+          <div class="bar"></div>
+        </div>
+        <ul class="menu" id="menu">
+          <li><a href="#">Accueil</a></li>
+          <li><a href="#">Wiki</a></li>
+          <li><a href="#">Reglement</a></li>
+          <li><a href="#">Discord</a></li>
+        </ul>
+      </nav>
 
-    <!-- HEADER: -->
-    <h1>SnapBack</h1>
+      <!-- HEADER / LOGO: -->
+      <img class="snapback-logo" src="./images/logo.png" alt="" />
+      <h1>SnapBack</h1>
 
-    <!-- BUTTONS: -->
-    <!-- <a href="#">Discord</a>
-    <a href="#">Server</a> -->
+      <!-- BUTTONS: -->
+      <!-- <a href="#">Discord</a>
+      <a href="#">Server</a> -->
 
-    <!-- DESCRIPTION: -->
-    <!-- <h2>Description</h2>
-    <p>
+      <!-- DESCRIPTION: -->
+      <!-- <h2>Description</h2>
+      <p>
       Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit, atque.
-    </p> -->
+      </p> -->
 
-    <!-- IFRAME / VIDEO: -->
-    <!-- <iframe
+      <!-- IFRAME / VIDEO: -->
+      <!-- <iframe
       width="560"
       height="315"
       src="https://www.youtube.com/embed/QdBZY2fkU-0?si=B0an1OABxxNwU5oU"
@@ -62,16 +72,17 @@
       allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
       referrerpolicy="strict-origin-when-cross-origin"
       allowfullscreen
-    ></iframe> -->
+      ></iframe> -->
 
-    <!-- LOGO'S: -->
-    <!-- <a href="#"><i class="fa-brands fa-twitter"></i></a>
-    <a href="#"><i class="fa-brands fa-tiktok"></i></a>
-    <a href="#"><i class="fa-brands fa-youtube"></i></a> -->
+      <!-- LOGO'S: -->
+      <!-- <a href="#"><i class="fa-brands fa-twitter"></i></a>
+      <a href="#"><i class="fa-brands fa-tiktok"></i></a>
+      <a href="#"><i class="fa-brands fa-youtube"></i></a> -->
 
-    <!-- FOOTER: -->
-    <!-- <footer>
+      <!-- FOOTER: -->
+      <!-- <footer>
       <p>footer...</p>
-    </footer> -->
+      </footer> -->
+    </div>
   </body>
 </html>

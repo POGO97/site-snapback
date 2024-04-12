@@ -6,47 +6,116 @@
 body {
   /* font-family: "Inter", sans-serif; */
   font-family: "Sedan", serif;
+  background-image: url("../images/gta-background.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 100dvh;
+}
 
+.wrapper {
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.7);
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-
-  padding: 50px 0 0 0;
 }
 
 /* NAVIGATION BAR: */
-.nav-bar {
-  background-color: var(--black);
-  padding: 10px;
-  /* width: 100%; */
-  text-align: center;
+.navbar {
+  /* border: 2px solid red; */
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   position: fixed;
   top: 0;
   right: 0;
   left: 0;
 }
 
-.nav-bar a {
-  color: var(--white);
-  font-size: 20px;
-  font-weight: bold;
-  padding: 5px 10px;
-  margin: 0 10px;
-  text-decoration: none;
+@media only screen and (min-width: 768px) {
+  .navbar {
+    flex-direction: row;
+  }
 }
 
-.nav-bar a:hover {
-  color: var(--orange);
+.menu {
+  display: none;
+  flex-direction: column;
+  margin-top: 10px;
 }
 
-/* HEADER: */
-h1 {
+@media only screen and (min-width: 768px) {
+  .menu {
+    display: flex;
+    flex-direction: row;
+    margin-top: 0;
+  }
+}
+
+.menu.active {
+  display: flex;
+}
+
+.menu li {
   margin: 20px;
+  text-align: center;
+}
+
+.menu li a {
+  color: #fff;
+  text-decoration: none;
+  padding: 10px 30px;
+  background-color: rgba(51, 51, 51, 0.8);
+  border-radius: 3px;
+}
+
+@media only screen and (min-width: 768px) {
+  .menu li a {
+    background-color: transparent;
+  }
+}
+
+.burger-menu {
+  background-color: rgba(51, 51, 51, 0.8);
+  border-radius: 3px;
+  display: flex;
+  flex-direction: column;
+  cursor: pointer;
+  padding: 5px;
+}
+
+@media only screen and (min-width: 768px) {
+  .burger-menu {
+    display: none;
+  }
+}
+
+.bar {
+  width: 25px;
+  height: 3px;
+  background-color: #fff;
+  margin: 3px 0;
+  border-radius: 3px;
+}
+
+/* HEADER LOGO: */
+h1 {
+  margin: 10px;
   color: var(--orange);
   font-size: 50px;
   font-weight: bold;
 }
+
+.snapback-logo {
+  width: 20%;
+  margin: 10px;
+}
+
 /* BUTTONS: */
 
 /* DESCRIPTION: */
