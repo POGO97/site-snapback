@@ -1,0 +1,26 @@
+body {
+  font-family: sans-serif;
+}
+
+.main-nav {
+  background-color: black;
+  padding: 10px;
+}
+
+.main-nav a {
+  color: white;
+  font-weight: bold;
+  padding: 5px;
+  text-decoration: none;
+}
+
+.main-nav a:hover {
+  color: orangered;
+}
+
+h1 {
+    margin: 20px;
+  color: green;
+  font-size: 50px;
+  font-weight: bold;
+}
