@@ -4,8 +4,8 @@
 
 /* SITE: */
 body {
-  /* font-family: "Inter", sans-serif; */
-  font-family: "Sedan", serif;
+  font-family: "Inter", sans-serif;
+  /* font-family: "Sedan", serif; */
   background-image: url("../images/gta-background.png");
   background-size: cover;
   background-position: center;
@@ -72,6 +72,8 @@ body {
   padding: 10px 30px;
   background-color: rgba(51, 51, 51, 0.8);
   border-radius: 3px;
+  font-size: 20px;
+  font-weight: 500;
 }
 
 @media only screen and (min-width: 768px) {
@@ -105,24 +107,33 @@ body {
 
 /* HEADER LOGO: */
 h1 {
-  margin: 10px;
+  margin: 20px;
   color: var(--orange);
   font-size: 50px;
   font-weight: bold;
 }
 
 .snapback-logo {
-  width: 70%;
+  width: 65%;
   margin: 10px;
 }
 
 @media only screen and (min-width: 768px) {
   .snapback-logo {
-    width: 30%;
+    width: 25%;
   }
 }
 
 /* BUTTONS: */
+.call-to-action {
+  background-color: rgba(0, 0, 0, 0.8);
+  padding: 10px 20px;
+  margin: 10px;
+  border-radius: 6px;
+  color: var(--white);
+  text-decoration: none;
+  font-weight: 500;
+}
 
 /* DESCRIPTION: */
 
