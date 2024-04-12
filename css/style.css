@@ -1,26 +1,58 @@
+/* IMPORT: */
+@import "./reset.css";
+@import "./colors.css";
+
+/* SITE: */
 body {
-  font-family: sans-serif;
+  /* font-family: "Inter", sans-serif; */
+  font-family: "Sedan", serif;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  padding: 50px 0 0 0;
 }
 
-.main-nav {
-  background-color: black;
+/* NAVIGATION BAR: */
+.nav-bar {
+  background-color: var(--black);
   padding: 10px;
+  /* width: 100%; */
+  text-align: center;
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
 }
 
-.main-nav a {
-  color: white;
+.nav-bar a {
+  color: var(--white);
+  font-size: 20px;
   font-weight: bold;
-  padding: 5px;
+  padding: 5px 10px;
+  margin: 0 10px;
   text-decoration: none;
 }
 
-.main-nav a:hover {
-  color: orangered;
+.nav-bar a:hover {
+  color: var(--orange);
 }
 
+/* HEADER: */
 h1 {
   margin: 20px;
-  color: green;
+  color: var(--orange);
   font-size: 50px;
   font-weight: bold;
 }
+/* BUTTONS: */
+
+/* DESCRIPTION: */
+
+/* IFRAME / VIDEO: */
+
+/* LOGO'S: */
+
+/* FOOTER: */
