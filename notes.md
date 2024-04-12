@@ -16,3 +16,6 @@
   - Iframe youtube
   - LOGO Reseaux
   - Footer
+- **EXTRA**
+  - discord user count:
+    - check widgets: server settings > widget > enable widget > copy the html snippet
