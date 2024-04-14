@@ -1,0 +1,58 @@
+/* PAGES: */
+.pages-wrapper {
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 8px;
+  color: var(--white);
+  width: 90vw;
+  margin: 100px 0;
+  padding: 50px;
+}
+
+@media only screen and (min-width: 768px) {
+  .pages-wrapper {
+    width: 60vw;
+  }
+}
+
+.pages-wrapper > h2 {
+  font-size: 34px;
+  font-weight: bold;
+  margin: 20px 20px 60px 20px;
+}
+
+.pages-wrapper > h3 {
+  font-size: 30px;
+  font-weight: bold;
+  margin: 30px 20px 20px 20px;
+}
+
+.pages-wrapper > h4 {
+  font-size: 26px;
+  font-weight: bold;
+  margin: 30px 20px 20px 20px;
+}
+
+.pages-wrapper > h5 {
+  font-size: 22px;
+  font-weight: bold;
+  margin: 30px 20px 20px 20px;
+}
+
+.pages-wrapper > h6 {
+  font-size: 18px;
+  font-weight: bold;
+  margin: 30px 20px 20px 20px;
+}
+
+.pages-wrapper > p {
+  margin: 20px;
+}
+
+.pages-wrapper > ul {
+  margin: 20px;
+  padding-left: 10px;
+  list-style-type: disc;
+}
+.pages-wrapper > ul li {
+  margin: 5px 20px;
+}

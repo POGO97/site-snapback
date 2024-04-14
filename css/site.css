@@ -1,0 +1,106 @@
+/* SITE: */
+body {
+  font-family: "Inter", sans-serif;
+  /* font-family: "Sedan", serif; */
+  background-image: url("../images/gta-background.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  min-height: 100dvh;
+}
+
+.wrapper {
+  width: 100%;
+  min-height: 100vh;
+  background-color: rgba(0, 0, 0, 0.7);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* NAVIGATION BAR: */
+.navbar {
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  /* position: fixed;
+    top: 0;
+    right: 0;
+    left: 0; */
+}
+
+@media only screen and (min-width: 768px) {
+  .navbar {
+    flex-direction: row;
+  }
+}
+
+.menu {
+  display: none;
+  flex-direction: column;
+  margin-top: 10px;
+}
+
+@media only screen and (min-width: 768px) {
+  .menu {
+    display: flex;
+    flex-direction: row;
+    margin-top: 0;
+  }
+}
+
+.menu.active {
+  display: flex;
+}
+
+.menu li {
+  margin: 20px;
+  text-align: center;
+}
+
+.menu li a {
+  color: #fff;
+  text-decoration: none;
+  padding: 10px 30px;
+  background-color: rgba(51, 51, 51, 0.8);
+  border-radius: 3px;
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.menu li a:hover {
+  color: var(--orange);
+}
+
+@media only screen and (min-width: 768px) {
+  .menu li a {
+    background-color: transparent;
+  }
+}
+
+.burger-menu {
+  background-color: rgba(51, 51, 51, 0.8);
+  border-radius: 3px;
+  display: flex;
+  flex-direction: column;
+  cursor: pointer;
+  padding: 5px;
+}
+
+@media only screen and (min-width: 768px) {
+  .burger-menu {
+    display: none;
+  }
+}
+
+.bar {
+  width: 25px;
+  height: 3px;
+  background-color: #fff;
+  margin: 3px 0;
+  border-radius: 3px;
+}
